@@ -19,6 +19,15 @@ h1 {
   margin-left: 30%;
 }
 .tagcloud--item:hover {
-  color: #b7c723 
+  color: #c79b23 
+}
+
+@media (max-width: 800px) {
+  .tagcloud {
+    margin: 0%;
+  }
+  h1 {
+    margin-left: 200px;
+  }
 }
 
