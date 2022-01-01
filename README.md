@@ -2,42 +2,38 @@
 
 - This repo contains detail steps for implementing animated 3D text sphere in reactJS.
 
-- I have used <b>TagCloud.js</b> npm module as react component for creating rolling word cloud.
+- I imported <b>TagCloud.js</b> npm module and used it as a react component for creating rolling wordCloud.
 
 - <b>TagCloud.js</b> is a JavaScript library that allows you to create an animated, interactive 3D sphere tag cloud from an array of text strings.
 <p align="center">
   <img alt="TagCloud" src="demo.gif" width="500">
 </p>
 
-Full documentation and usage of this module is available [here](https://github.com/cong-min/TagCloud)
+Full documentation and installation of this module is available [here](https://github.com/cong-min/TagCloud)
 
-## Usage
+## Integration
 
 ### npm
-
-- Create a react app
-```bash
-$ npx create-react-app my-app
-```
 
 - Add TagCloud npm module
 ```bash
 $ npm i -S TagCloud
 ```
 
+- Create react component and import TagCloud
 ### JavaScript
 
 ```js
-const TagCloud = require('TagCloud');
+import React, { useEffect } from 'react'
+import TagCloud from 'TagCloud';
 
 const container = '.content';
 const texts = [
-    '3D', 'TagCloud', 'JavaScript',
-    'CSS3', 'Animation', 'Interactive',
-    'Mouse', 'Rolling', 'Sphere',
-    '6KB', 'v2.x',
+  '3D', 'TagCloud', 'JavaScript',
+  'CSS3', 'Animation', 'Interactive',
+  'Mouse', 'Rolling', 'Sphere',
+  '6KB', 'v2.x',
 ];
-
 const options = {
   radius: 300,
   // animation speed
@@ -52,12 +48,22 @@ const options = {
   keep: true
 };
 
-TagCloud(container, texts, options);
-```
+const WordCloud = () => {
+  // to render wordcloud each time the page is reloaded
+  useEffect(() => {
+    TagCloud(container, texts, options);
+  })
 
-### HTML
-```html
-<span className="content"></span>
+  return (
+    <div className='main'>
+      <h1 className='heading'> TagCloud demo in reactJS </h1>
+      <span className="content"></span>
+    </div>
+  )
+}
+
+export default WordCloud;
+
 ```
 
 ### TagCloud(container, texts, options)
@@ -66,14 +72,10 @@ TagCloud(container, texts, options);
 - TagCloud method should be called when ever the page is reloaded which by default not the functionality of reactJS.
 - For rendering this component each time page is reloaded, we need to use react hooks useEffect method.
 ``` js
-
-const WordCloud = () => {
-  // to render wordcloud each time the page is reloaded
-  useEffect(() => {
+useEffect(() => {
     TagCloud(container, texts, options);
-  })
-  
+  }
 ```
 
-The result page in browser after implementing this module can be viewed [here](https://sairamkiran9.github.io//TagCloud-reactJS/)
+The deployment page in browser after implementing this module can be viewed [here](https://sairamkiran9.github.io//TagCloud-reactJS/)
 
