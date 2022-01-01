@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/TagCloud-reactJS/static/css/main.f2c007c4.css",
+    "main.css": "/TagCloud-reactJS/static/css/main.c7535588.css",
     "main.js": "/TagCloud-reactJS/static/js/main.e039d466.js",
     "index.html": "/TagCloud-reactJS/index.html",
-    "main.f2c007c4.css.map": "/TagCloud-reactJS/static/css/main.f2c007c4.css.map",
+    "main.c7535588.css.map": "/TagCloud-reactJS/static/css/main.c7535588.css.map",
     "main.e039d466.js.map": "/TagCloud-reactJS/static/js/main.e039d466.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2c007c4.css",
+    "static/css/main.c7535588.css",
     "static/js/main.e039d466.js"
   ]
 }
