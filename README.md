@@ -21,8 +21,9 @@ Full documentation and installation of this module is available [here](https://g
 $ npm i -S TagCloud
 ```
 
-- Create react component and import TagCloud
 ### JavaScript
+
+- Create react component and import TagCloud
 
 ```js
 import React, { useEffect } from 'react'
