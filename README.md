@@ -2,7 +2,8 @@
 
 - This repo contains detail steps for implementing animated 3D text sphere in reactJS.
 
-- I imported <b>TagCloud.js</b> npm module and used it in a react component for creating rolling wordCloud.
+- 
+- Import <b>TagCloud.js</b> npm module and use it in a react component for creating rolling wordCloud.
 
 - <b>TagCloud.js</b> is a JavaScript library that allows you to create an animated, interactive 3D sphere tag cloud from an array of text strings.
 
