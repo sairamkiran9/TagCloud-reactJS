@@ -7,7 +7,7 @@
 - <b>TagCloud.js</b> is a JavaScript library that allows you to create an animated, interactive 3D sphere tag cloud from an array of text strings.
 
 <p align="center">
-  <img alt="TagCloud demo" src="demo.gif" width="500">
+  <img alt="TagCloud demo" src="tagcloud.gif" width="500">
 </p>
 
 Full documentation and installation of this module is available [here](https://github.com/cong-min/TagCloud)
